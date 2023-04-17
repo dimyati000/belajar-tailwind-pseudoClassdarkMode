@@ -1,0 +1,14 @@
+action_id: trunk-single-player-auto-on-upgrade
+date: 2023-04-17 01:01:00
+run: trunk on-upgrade --single-player-only -n --no-progress --allow-daemon-start=false
+run_from: ""
+trigger: schedule 24h+5m
+result:
+  exit_code: 127
+  out: ""
+  err: "trunk-single-player-auto-on-upgrade: trunk: command not found\n"
+timestamp: 1681693260
+full_timestamp:
+  nanos: 87698000
+  seconds: 1681693260
+trunk_version: 1.7.0
